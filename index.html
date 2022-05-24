@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <title>Github Finder</title>
+</head>
+
+<body style="background: hsl(0, 0%, 21%);">
+    <!-- Main Hero Banner -->
+    <div class="hero is-dark ">
+        <div class="container py-5">
+            <div class="hero-head">
+                <!-- NavBar containing Brand at left -->
+                <nav class="navbar">
+                    <!-- <div class="container"> -->
+                    <div class="nav-brand has-text-centered">
+                        <a class="subtitle is-2 is-unselectable">
+                            GitHub Profile Finder
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="hero-body is-centered">
+            <!-- Card -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-title has-text-weight-normal is-size-4">Search Github Users</div>
+                    <div class="card-header-icon">
+                        <span class="icon has-text-dark">
+                            <i class="fas fa-moon fa-2x"></i>
+                            <!-- <i class="fas fa-sun fa-2x"></i> -->
+                        </span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <form action="" id="search">
+                        <label for="username" class="has-text-weight-light">Enter a username to fetch a user profile and
+                            their repos</label>
+                        <div class="field has-addons">
+                            <p class="control has-icons-left is-expanded">
+                                <input class="input is-dark has-icons" type="text" id="searchUser"
+                                    placeholder="Github Username..." spellcheck="false" autofocus autocomplete="off">
+                                <span class="icon is-left">
+                                    <i class="fas fa-search fa-lg"></i>
+                                </span>
+                            </p>
+                            <div class="control">
+                                <input type="submit" class="button is-dark" value="Search">
+                            </div>
+                        </div>
+                </div>
+                </form>
+                <!-- <footer class="card-footer">
+                    <a class="card-footer-item">Search</a>
+                    <a class="card-footer-item">Clear</a>
+                </footer> -->
+            </div>
+        </div>
+        <!-- <div class="hero-foot">
+
+        </div> -->
+    </div>
+
+    <section id="profile">
+
+    </section>
+
+    <section id="repos">
+
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="box" style="background: #222; color: #fff;">
+        <div class="content has-text-centered">
+            <p>
+                Github Profile Finder <sup>&copy</sup> by <a class="has-text-white is-italic"
+                    href="https://github.com/Executioner769" target="_blank">Executioner769</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="github.js"></script>
+    <script src="userinterface.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
